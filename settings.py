@@ -6,7 +6,7 @@ class Settings:
         self.tank_speed = 2
         self.bullet_color = (60, 60, 60)
         self.bullet_speed = 2.75
-        self.bullet_width = 4
+        self.bullet_width = 200
         self.bullet_height = 6
         self.bullets_allowed = 5
         self.zombie_speed = 1

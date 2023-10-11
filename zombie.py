@@ -8,7 +8,7 @@ class Zombie(Sprite):
         self.screen_rect = self.screen.get_rect()
         self.settings = zomb.settings
 
-        self.image = pygame.image.load("images/zombie.png")
+        self.image = pygame.image.load("images/scary.png")
         self.rect = self.image.get_rect()
 
         self.rect.x = self.rect.width

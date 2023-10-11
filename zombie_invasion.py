@@ -73,11 +73,16 @@ class Zombie_Invasion:
         for bullet in self.bullets.copy():
             if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
+        
+        collisions = pygame.sprite.groupcollide(
+            self.bullets, self.zombies, False, True
+        )
     
     def _update_zombies(self):
         self._check_crowd_edges()
         self.zombies.update()
         self.free_memory()
+
 
     def _create_crowd(self):
         zombie = Zombie(self)
